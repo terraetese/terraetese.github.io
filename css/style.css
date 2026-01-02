@@ -1,16 +1,18 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background: #f4f6f5;
-  margin: 0;
-  padding: 30px;
   color: #1f2d2b;
 }
 
 header {
   background: #0f3d2e;
   color: white;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 30px;
+}
+
+header h1 {
+  margin: 0;
 }
 
 nav {
@@ -18,29 +20,72 @@ nav {
 }
 
 nav a {
-  margin-right: 15px;
+  color: white;
   text-decoration: none;
-  color: #0f3d2e;
+  margin-right: 20px;
   font-weight: bold;
 }
 
-section {
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 40px;
+  background: linear-gradient(120deg, #0f3d2e, #1e8449);
+  color: white;
+  border-radius: 20px;
+  margin: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 20px;
+  margin: 30px;
+}
+
+.card {
   background: white;
-  margin-top: 20px;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0f3d2e;
+}
+
+.section {
+  margin: 40px;
+}
+
+.highlight {
+  background: #eaf5ef;
+  padding: 25px;
+  border-left: 6px solid #0f3d2e;
+  border-radius: 12px;
 }
 
 table {
-  width: 100%;
+  width: calc(100% - 80px);
+  margin: 40px;
   border-collapse: collapse;
 }
 
 th, td {
-  border: 1px solid #ccc;
-  padding: 10px;
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
 }
 
 th {
-  background: #e8efe9;
+  background: #0f3d2e;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
 }
