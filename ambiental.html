@@ -4,12 +4,53 @@
 <meta charset="UTF-8">
 <title>Meio Ambiente — Terra & Tese</title>
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+.hero {
+  background: linear-gradient(120deg, #145a32, #1e8449);
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #145a32;
+}
+
+.section {
+  margin-top: 50px;
+}
+
+.highlight {
+  background: #eef6f1;
+  padding: 25px;
+  border-left: 6px solid #145a32;
+  border-radius: 10px;
+}
+</style>
+
 </head>
 <body>
 
 <header>
 <h1>🌳 Meio Ambiente</h1>
-  <nav>
+<nav>
   <a href="index.html">Início</a>
   <a href="ambiental.html">Meio Ambiente</a>
   <a href="agro.html">Agro</a>
@@ -18,25 +59,62 @@
 </nav>
 </header>
 
-<section class="hero">
-<h2>O Brasil preserva mais do que imagina</h2>
-<p>Mais de dois terços do território brasileiro ainda possuem cobertura vegetal nativa, em grande parte dentro de propriedades privadas.</p>
-</section>
+<div class="hero">
+<h2>O Brasil é uma potência ambiental</h2>
+<p>
+Mais de dois terços do território brasileiro permanecem cobertos por vegetação nativa.
+Grande parte dessa preservação ocorre dentro de propriedades privadas, por exigência legal.
+</p>
+</div>
 
-<section>
+<div class="cards">
+
+<div class="card">
+<h3>🌿 Vegetação nativa</h3>
+<p><strong>~66%</strong> do território brasileiro ainda é coberto por vegetação natural.</p>
+<p><small>Fonte: MapBiomas</small></p>
+</div>
+
+<div class="card">
+<h3>🏞️ Áreas protegidas</h3>
+<p><strong>~218 milhões de hectares</strong> estão preservados dentro de imóveis rurais.</p>
+<p><small>Fonte: Embrapa</small></p>
+</div>
+
+<div class="card">
+<h3>🚜 Área agrícola</h3>
+<p>A agricultura ocupa cerca de <strong>8%</strong> do território nacional.</p>
+<p><small>Fonte: IBGE</small></p>
+</div>
+
+</div>
+
+<div class="section">
+<h2>O que esses dados significam?</h2>
+
+<div class="highlight">
+<p>
+O Brasil é um dos únicos grandes produtores de alimentos que mantém a maior parte do seu território preservado.
+Isso ocorre porque o Código Florestal exige que produtores rurais mantenham áreas de reserva legal e preservação permanente.
+</p>
+</div>
+</div>
+
+<div class="section">
+<h2>Dados detalhados</h2>
+
 <table>
 <tr><th>Indicador</th><th>Valor</th><th>Fonte</th></tr>
-<tr><td>Vegetação nativa no território</td><td>~66%</td><td>MapBiomas</td></tr>
-<tr><td>Áreas protegidas em imóveis rurais</td><td>~218 milhões ha</td><td>Embrapa</td></tr>
+<tr><td>Vegetação nativa no Brasil</td><td>~66%</td><td>MapBiomas</td></tr>
+<tr><td>Área preservada em imóveis rurais</td><td>~218 milhões ha</td><td>Embrapa</td></tr>
 <tr><td>Área agrícola</td><td>~8% do território</td><td>IBGE</td></tr>
 </table>
-</section>
 
-<section class="highlight">
-<p>
-O Código Florestal brasileiro exige que produtores preservem parte significativa de suas terras, fazendo do campo um dos maiores responsáveis pela conservação ambiental no país.
-</p>
-</section>
+</div>
+
+<footer>
+<p>Narrativas dividem. Dados unem.</p>
+</footer>
 
 </body>
 </html>
