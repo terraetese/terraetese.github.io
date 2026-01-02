@@ -2,27 +2,140 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Painel Terra & Tese</title>
+<title>Terra & Tese — O Brasil em Dados</title>
+
+<link rel="stylesheet" href="css/style.css">
 
 <style>
-body {font-family: Arial;margin: 40px;background: #f4f6f5;color: #1f2d2b;}
-header {background: #0f3d2e;color: #fff;padding: 20px;border-radius: 8px;}
-section {background: #fff;padding: 20px;margin-top: 20px;border-radius: 8px;}
-h1, h2 {color: #0f3d2e;}
-table {width: 100%;border-collapse: collapse;}
-td, th {border: 1px solid #ccc;padding: 8px;text-align: left;}
-footer {margin-top: 40px;text-align: center;color: #555;}
+.hero {
+  margin-top: 30px;
+  padding: 40px;
+  background: linear-gradient(120deg, #0f3d2e, #1e6f4f);
+  color: white;
+  border-radius: 15px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0f3d2e;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #0f3d2e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.section {
+  margin-top: 50px;
+  max-width: 900px;
+}
+
+.highlight {
+  background: #eef5f2;
+  padding: 25px;
+  border-left: 6px solid #0f3d2e;
+  border-radius: 10px;
+}
 </style>
+
 </head>
 <body>
+
 <header>
-<h1>Painel Terra & Tese</h1>
-<p>O Brasil em Dados Reais — Agro, Meio Ambiente e Economia</p>
+<h1>Terra & Tese</h1>
+<p>O Brasil que não cabe nos slogans</p>
 </header>
-<section><h2>Missão</h2><p>Reunir dados públicos, científicos e institucionais sobre o Brasil sem filtro ideológico.</p></section>
-<section><h2>Meio Ambiente</h2><table><tr><th>Indicador</th><th>Valor</th><th>Fonte</th></tr><tr><td>Vegetação nativa</td><td>~60%</td><td>MapBiomas / IBGE</td></tr><tr><td>Vegetação em imóveis rurais</td><td>~40%</td><td>Embrapa</td></tr></table></section>
-<section><h2>Agro (Resumo)</h2><table><tr><th>Indicador</th><th>Valor</th><th>Fonte</th></tr><tr><td>Área de lavouras</td><td>~90 milhões ha</td><td>IBGE</td></tr></table></section>
-<section><h2>🌾 Agro — Dados Oficiais</h2><table><tr><th>Indicador</th><th>Valor</th><th>Fonte</th></tr><tr><td>Produção total de grãos (2025)</td><td>~341,9 milhões de toneladas</td><td>IBGE / MAPA</td></tr><tr><td>Área plantada</td><td>~81 milhões de hectares</td><td>IBGE</td></tr><tr><td>Exportações do agronegócio (2023)</td><td>US$ 166,5 bilhões</td><td>MAPA</td></tr></table><p>O agronegócio brasileiro é um dos pilares da economia nacional, combinando aumento de produtividade, tecnologia no campo e presença global.</p></section>
-<section><h2>Economia</h2><table><tr><th>Indicador</th><th>Valor</th><th>Fonte</th></tr><tr><td>Participação do agro no PIB</td><td>~25%</td><td>IBGE / Cepea</td></tr></table></section>
-<footer><p>Narrativas dividem. Dados unem.</p></footer>
-</body></html>
+
+<div class="hero">
+<h1>O Brasil em dados reais</h1>
+<p>
+O debate brasileiro sobre agro, meio ambiente e economia está preso a narrativas.
+O Terra & Tese organiza dados públicos e científicos para que qualquer pessoa possa
+ver o país como ele realmente é.
+</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌳 Meio Ambiente</h3>
+<p>Descubra quanto o Brasil preserva, onde estão as áreas protegidas e como a lei ambiental funciona na prática.</p>
+<a href="ambiental.html">Ver Painel →</a>
+</div>
+
+<div class="card">
+<h3>🌾 Agronegócio</h3>
+<p>Veja quanto o Brasil produz, quanto exporta e qual o papel do campo na economia nacional.</p>
+<a href="agro.html">Ver Painel →</a>
+</div>
+
+<div class="card">
+<h3>💰 Economia</h3>
+<p>Entenda como o agro impacta o PIB, a balança comercial e o crescimento do país.</p>
+<a href="economia.html">Ver Painel →</a>
+</div>
+
+</div>
+
+<div class="section">
+<h2>Por que o Terra & Tese existe?</h2>
+
+<div class="highlight">
+<p>
+O Brasil vive um debate distorcido sobre campo, meio ambiente e economia.
+De um lado, slogans. Do outro, militância.
+</p>
+<p>
+O Terra & Tese existe para trazer os dados para o centro da conversa.
+</p>
+</div>
+</div>
+
+<div class="section">
+<h2>De onde vêm os dados?</h2>
+<p>
+Todos os números publicados aqui vêm de fontes públicas e auditáveis:
+IBGE, Embrapa, CONAB, MAPA, MapBiomas e Banco Central.
+</p>
+<p>
+Em breve, cada painel terá seus links diretos para relatórios oficiais.
+</p>
+</div>
+
+<footer>
+<p>Narrativas dividem. Dados unem.</p>
+</footer>
+
+</body>
+</html>
