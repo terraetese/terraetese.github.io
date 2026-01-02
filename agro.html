@@ -2,13 +2,54 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Agronegócio — Terra & Tese</title>
+<title>Agro — Terra & Tese</title>
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+.hero {
+  background: linear-gradient(120deg, #7d6608, #b7950b);
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #7d6608;
+}
+
+.section {
+  margin-top: 50px;
+}
+
+.highlight {
+  background: #fbf6e8;
+  padding: 25px;
+  border-left: 6px solid #7d6608;
+  border-radius: 10px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-<h1>🌾 Agronegócio</h1>
+<h1>🌾 Agro</h1>
 <nav>
   <a href="index.html">Início</a>
   <a href="ambiental.html">Meio Ambiente</a>
@@ -18,25 +59,51 @@
 </nav>
 </header>
 
-<section class="hero">
+<div class="hero">
 <h2>O Brasil alimenta o mundo</h2>
-<p>Com tecnologia e produtividade, o país se tornou um dos maiores produtores e exportadores de alimentos do planeta.</p>
-</section>
+<p>
+O agronegócio brasileiro é um dos mais produtivos do planeta, combinando tecnologia,
+clima favorável e um dos códigos ambientais mais rígidos do mundo.
+</p>
+</div>
 
-<section>
+<div class="cards">
+
+<div class="card">
+<h3>🌽 Produção</h3>
+<p>Mais de <strong>340 milhões de toneladas</strong> de grãos por ano.</p>
+<p><small>IBGE / Conab</small></p>
+</div>
+
+<div class="card">
+<h3>🌎 Exportações</h3>
+<p><strong>US$ 160+ bilhões</strong> exportados anualmente.</p>
+<p><small>MAPA</small></p>
+</div>
+
+<div class="card">
+<h3>🚜 Área cultivada</h3>
+<p>Apenas <strong>8%</strong> do território brasileiro.</p>
+<p><small>IBGE</small></p>
+</div>
+
+</div>
+
+<div class="section">
+<div class="highlight">
+O Brasil é líder mundial na produção de soja, milho, carne bovina, café, açúcar e etanol —
+produzindo em uma fração de seu território e mantendo grandes áreas preservadas.
+</div>
+</div>
+
 <table>
 <tr><th>Indicador</th><th>Valor</th><th>Fonte</th></tr>
-<tr><td>Produção de grãos (2025)</td><td>~341 milhões t</td><td>IBGE / CONAB</td></tr>
-<tr><td>Área plantada</td><td>~81 milhões ha</td><td>IBGE</td></tr>
-<tr><td>Exportações do agro</td><td>US$ 166 bilhões</td><td>MAPA</td></tr>
+<tr><td>Produção de grãos</td><td>~340 milhões t</td><td>Conab</td></tr>
+<tr><td>Exportações do agro</td><td>US$ 166 bi</td><td>MAPA</td></tr>
+<tr><td>Área cultivada</td><td>~8%</td><td>IBGE</td></tr>
 </table>
-</section>
 
-<section class="highlight">
-<p>
-O Brasil produz alimentos para mais de 1 bilhão de pessoas usando uma fração do seu território e mantendo grandes áreas preservadas.
-</p>
-</section>
+<footer><p>Narrativas dividem. Dados unem.</p></footer>
 
 </body>
 </html>
