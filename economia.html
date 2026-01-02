@@ -4,7 +4,44 @@
 <meta charset="UTF-8">
 <title>Economia — Terra & Tese</title>
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+.hero {
+  background: linear-gradient(120deg, #154360, #1f618d);
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #154360;
+}
+
+.highlight {
+  background: #eef3f9;
+  padding: 25px;
+  border-left: 6px solid #154360;
+  border-radius: 10px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
@@ -18,24 +55,47 @@
 </nav>
 </header>
 
-<section class="hero">
-<h2>O agro sustenta o Brasil</h2>
-<p>O setor é um dos maiores motores do crescimento, do emprego e do superávit comercial.</p>
-</section>
+<div class="hero">
+<h2>O Agro sustenta o Brasil</h2>
+<p>
+O setor rural é responsável por grande parte das exportações, do superávit comercial
+e da estabilidade cambial do país.
+</p>
+</div>
 
-<section>
+<div class="cards">
+
+<div class="card">
+<h3>📊 PIB</h3>
+<p>O agro representa cerca de <strong>25%</strong> do PIB brasileiro.</p>
+</div>
+
+<div class="card">
+<h3>💵 Exportações</h3>
+<p>Mais de <strong>50%</strong> do superávit comercial vem do agro.</p>
+</div>
+
+<div class="card">
+<h3>👷 Empregos</h3>
+<p>Mais de <strong>20 milhões</strong> de brasileiros.</p>
+</div>
+
+</div>
+
+<div class="section">
+<div class="highlight">
+Sem o agronegócio, o Brasil enfrentaria déficit externo, moeda fraca e inflação de alimentos.
+</div>
+</div>
+
 <table>
 <tr><th>Indicador</th><th>Valor</th><th>Fonte</th></tr>
-<tr><td>Participação do agro no PIB</td><td>~25%</td><td>Cepea / IBGE</td></tr>
-<tr><td>Saldo comercial do agro</td><td>Maior superávit</td><td>Banco Central</td></tr>
+<tr><td>Participação no PIB</td><td>~25%</td><td>Cepea / IBGE</td></tr>
+<tr><td>Exportações</td><td>US$ 160+ bi</td><td>MAPA</td></tr>
+<tr><td>Empregos</td><td>20 milhões</td><td>IBGE</td></tr>
 </table>
-</section>
 
-<section class="highlight">
-<p>
-O agronegócio financia parte significativa da economia urbana, das importações e da estabilidade cambial do país.
-</p>
-</section>
+<footer><p>Narrativas dividem. Dados unem.</p></footer>
 
 </body>
 </html>
