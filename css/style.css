@@ -89,3 +89,39 @@ footer {
   padding: 30px;
   color: #777;
 }
+.site-header {
+  background: #0f3d2e;
+  color: white;
+  padding: 20px 40px;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.brand p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.site-header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.site-header nav a:hover {
+  text-decoration: underline;
+}
